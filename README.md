@@ -32,23 +32,59 @@ async function getZipCodes() {
 
 ## API Reference
 
-#### Query by Zip Codes
+#### Client
 
-```javascript
-queryByZipCodes(zipCodes, options);
-```
+Client constructor takes an object with the following properties
+| Property | Type | Description |
+| :-------- | :------- | :------------------------- |
+| `apiKey` | `string` | **Required**. API key from [Rapid API](https://rapidapi.com/VanitySoft/api/boundaries-io-1) |
+| `apiHost`| `string` | **Optional**. This can be ignored in most cases, however it is exposed in case the RapidAPI host changes prior to us being able to update this package |
+| `baseUrl`| `string` | **Optional**. This can be ignored in most cases, however it is exposed in case the RapidAPI base url changes prior to us being able to update this package
+
+#### queryByZipCodes(zipCodes, options)
 
 | Parameter  | Type                | Description                                                                 |
 | :--------- | :------------------ | :-------------------------------------------------------------------------- |
 | `zipCodes` | `string` or `array` | **Required**. A comma delimited list of zip codes, or an array of zip codes |
 | `options`  | `object`            | **Optional**. See table below                                               |
 
-| Property     | Type      | Description   |
-| :----------- | :-------- | :------------ |
-| `city`       | `string`  | **Optional**. |
-| `state`      | `string`  | **Optional**. |
-| `showCenter` | `boolean` | **Optional**. |
-| `combine`    | `boolean` | **Optional**. |
+| Property      | Type      | Description   |
+| :------------ | :-------- | :------------ |
+| `city`        | `string`  | **Optional**. |
+| `state`       | `string`  | **Optional**. |
+| `county`      | `string`  | **Optional**. |
+| `showCenter`  | `boolean` | **Optional**. |
+| `combine`     | `boolean` | **Optional**. |
+| `showDetails` | `boolean` | **Optional**. |
+| `and`         | `boolean` | **Optional**. |
+
+#### queryCountyByLatLon(lat, lon)
+
+| Parameter | Type     | Description             |
+| :-------- | :------- | :---------------------- |
+| `lat`     | `number` | **Required**. Latitude  |
+| `lon`     | `number` | **Required**. Longitude |
+
+#### queryCountyByName(countyName, stateAbbrv)
+
+| Parameter    | Type     | Description                      |
+| :----------- | :------- | :------------------------------- |
+| `countyName` | `string` | **Required**. County name        |
+| `stateAbbrv` | `string` | **Required**. State abbreviation |
+
+#### queryPlaceByName(placeName, stateAbbrv)
+
+| Parameter    | Type     | Description                      |
+| :----------- | :------- | :------------------------------- |
+| `placeName`  | `string` | **Required**. Place name         |
+| `stateAbbrv` | `string` | **Required**. State abbreviation |
+
+#### queryPlaceByLatLon(lat, lon)
+
+| Parameter | Type     | Description             |
+| :-------- | :------- | :---------------------- |
+| `lat`     | `number` | **Required**. Latitude  |
+| `lon`     | `number` | **Required**. Longitude |
 
 ## Feedback
 
