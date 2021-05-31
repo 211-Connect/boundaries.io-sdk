@@ -14,7 +14,7 @@ Install Boundaries.io SDK with npm
 
 ## Prerequisites
 
-You must have an API key from [Rapid API](https://rapidapi.com/VanitySoft/api/boundaries-io-1)
+- You must have an API key from [Rapid API](https://rapidapi.com/VanitySoft/api/boundaries-io-1)
 
 ## Usage/Examples
 
