@@ -42,7 +42,14 @@ export class Client {
     });
   }
 
-  async queryByZipCodes(zipCodes: string, opts?: zipCodeBoundaryOptions) {
+  async queryByZipCodes(
+    zipCodes: string | Array<string>,
+    opts?: zipCodeBoundaryOptions
+  ) {
+    if (zipCodes instanceof Array) {
+      zipCodes = zipCodes.join(',');
+    }
+
     const queryParams = new URLSearchParams();
     queryParams.append('zipcode', zipCodes);
 
