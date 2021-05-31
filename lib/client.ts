@@ -5,8 +5,8 @@ import { BASE_URL, HOST } from './constants';
 
 type Options = {
   apiKey: string;
-  apiHost: string;
-  baseUrl: string;
+  apiHost?: string;
+  baseUrl?: string;
 };
 
 type zipCodeBoundaryOptions = {
@@ -36,7 +36,7 @@ export class Client {
       headers: {
         ...options?.headers,
         'x-rapidapi-key': this.options.apiKey,
-        'x-rapidapi-host': this.options.apiHost,
+        'x-rapidapi-host': this.options.apiHost || HOST,
         useQueryString: 'true',
       },
     });
