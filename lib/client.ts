@@ -22,11 +22,11 @@ type zipCodeBoundaryOptions = {
 export class Client {
   options: Options;
 
-  constructor({ apiKey, apiHost = HOST, baseUrl = BASE_URL }: Options) {
+  constructor({ apiKey, apiHost, baseUrl }: Options) {
     this.options = {
       apiKey,
-      apiHost,
-      baseUrl,
+      apiHost: apiHost || HOST,
+      baseUrl: baseUrl || BASE_URL,
     };
   }
 
