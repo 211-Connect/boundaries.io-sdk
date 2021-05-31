@@ -1,6 +1,6 @@
 {
   "name": "@211-connect/boundaries.io-sdk",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "boundaries.io is an easy to use HTTP api that allows you to retrieve geography polygons in GeoJSON format. This package is not affiliated with boundaries.io and is an ongoing project to bring all endpoints from boundaries.io in to a simple sdk.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,6 +20,10 @@
   ],
   "author": "Site Savvy",
   "license": "MIT",
+  "homepage": "https://github.com/211-Connect/boundaries.io-sdk/blob/main/README.md",
+  "repository": {
+    "url": "https://github.com/211-Connect/boundaries.io-sdk"
+  },
   "devDependencies": {
     "@types/node-fetch": "^2.5.10",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
