@@ -1,0 +1,28 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-irregular-whitespace": "off",
+    "linebreak-style": ["error", "windows"],
+    "semi": ["error", "always"],
+    "eol-last": ["error", "always"],
+    "quotes": ["error", "single"],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "require-atomic-updates": "off"
+  }
+}
