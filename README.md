@@ -1,6 +1,6 @@
 # Boundaries.io SDK
 
-boundaries.io is an easy to use HTTP api that allows you to retrieve geography polygons in GeoJSON format. This package is not affiliated with boundaries.io and is an ongoing project to bring all endpoints from boundaries.io in to a simple sdk.
+boundaries-io is an easy to use HTTP api that allows you to retrieve geography polygons in GeoJSON format. This package is not affiliated with boundaries-io and is an ongoing project to bring all endpoints from boundaries-io in to a simple sdk.
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
