@@ -1,7 +1,7 @@
 {
-  "name": "@211-connect/boundaries.io-sdk",
-  "version": "0.0.1",
-  "description": "boundaries.io is an easy to use HTTP api that allows you to retrieve geography polygons in GeoJSON format. This package is not affiliated with boundaries.io and is an ongoing project to bring all endpoints from boundaries.io in to a simple sdk.",
+  "name": "@connect211/boundaries-io-sdk",
+  "version": "0.0.2",
+  "description": "boundaries-io is an easy to use HTTP api that allows you to retrieve geography polygons in GeoJSON format. This package is not affiliated with boundaries.io and is an ongoing project to bring all endpoints from boundaries.io in to a simple sdk.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
