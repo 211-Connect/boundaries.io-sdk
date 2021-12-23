@@ -12,7 +12,6 @@
   },
   "rules": {
     "no-irregular-whitespace": "off",
-    "linebreak-style": ["error", "windows"],
     "semi": ["error", "always"],
     "eol-last": ["error", "always"],
     "quotes": ["error", "single"],

@@ -141,6 +141,16 @@ export class Client {
 
     return json;
   }
+
+  async queryStateByAbbreviation(stateAbbr: string) {
+    const data = await this.fetch(
+      `/reaperfire/rest/v1/public/boundary/territories/${stateAbbr}`
+    );
+
+    const json = await data.json();
+
+    return json;
+  }
 }
 
 export default Client;
